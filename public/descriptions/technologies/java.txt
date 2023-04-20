@@ -1,0 +1,6 @@
+After the first year, we began to learn Java at school. That's when I started to write my first
+games and I started to really like the language. These projects include e.g. Pong, Snake and Space
+Invaders which I wrote using JFrame. These projects showed me the benefits of the object-oriented
+programming paradigm, which initially seemed rather tiring because of its verbosity. It was a different
+approach to what I was previously used to and an easier one. Worries about segmentation faults or
+memory leaks were gone, so that I could concentrate on finding better algorithms faster. 

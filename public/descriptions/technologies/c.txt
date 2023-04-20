@@ -1,0 +1,8 @@
+This is the language my programming journey started with. I learned the basics in my first year at the
+HTL Villach and started building my own projects with it (even though pretty late) to strengthen my skills. 
+My main projects are the implementation of a Java-like map using void pointers, as well as Wordle,
+which also uses my map. I had a lot of fun writing those projects, especially because I learned a lot
+about how a computer processes variables and pointers, theory that seems quite essential to understand
+the technology we use. It is in my opinion the best programming language to start with, because it is
+syntactically similar to other programming language and because you learn a lot about the architecture
+of a computer.
