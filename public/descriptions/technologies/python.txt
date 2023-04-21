@@ -1,0 +1,4 @@
+I started learning Python pretty early in my programming journey, but until recently I never really had
+any use for it as I became more interested in Java (for school reasons). This year, I started writing
+my own Chess-implementation in Python and I really enjoyed it, because Python has many features that would
+be impossible (and also feel illegal) in Java (e.g. calling non-static functions statically).

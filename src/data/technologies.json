@@ -13,7 +13,7 @@
     },
     {
         "id": 3,
-        "name": "JS",
+        "name": "JavaScript",
         "img": "technologies/js.png",
         "text": "technologies/js.txt"
     },
@@ -22,6 +22,18 @@
         "name": "HTML/CSS",
         "img": "technologies/html-css.png",
         "text": "technologies/html-css.txt"
+    },
+    {
+        "id": 5,
+        "name": "Python",
+        "img": "technologies/python.png",
+        "text": "technologies/python.txt"
+    },
+    {
+        "id": 6,
+        "name": "Oracle SQL",
+        "img": "technologies/sql.png",
+        "text": "technologies/sql.txt"
     },
     {
         "id": 7,

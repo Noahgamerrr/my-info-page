@@ -35,7 +35,7 @@ function App() {
         <div className="container-fluid h-100">
           <div className='row h-100'>
             <Navbar/>
-            <main className='col-md-10 ps-4 pt-2'>
+            <main className='col-lg-10 ps-4 pt-5 pb-4'>
               <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='about-me' element={<AboutMe/>}/>

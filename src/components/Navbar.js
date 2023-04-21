@@ -5,8 +5,8 @@ export default function Navbar() {
     const [active, setActive] = React.useState("home");
     return (
         <> 
-            <div className="sidebar col-md-2 shadow">
-                <nav className="position-md-fixed">
+            <div className="sidebar col-lg-2 shadow">
+                <nav className="position-lg-fixed nav-lg">
                     <div className="list-group list-group-flush">
                         <Link className="list-group-item" to="/" onClick={() => setActive("home")}>
                             <span className={active === "home" ? "link-active" : undefined}>Home</span>
