@@ -66,6 +66,38 @@
     margin-top: 3em;
 }
 
+.h-lg-100 {
+    height: 100vh;
+}
+
+p, span {
+    font-size: 1.5em;
+}
+
+figcaption, li {
+    font-size: 1.2em;
+}
+
+.list-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+li > p {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: grey;
+}
+
+.link:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 992px) {
     .position-lg-fixed {
         position: relative;
@@ -94,5 +126,23 @@
 
     .language-description-1, .language-description-2 {
         margin-bottom: 5%;
+    }
+
+    .nav-container {
+        height: fit-content;
+    }
+
+    .h-lg-100 {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    p, span {
+        font-size: 1em;
+    }
+
+    figcaption, li {
+        font-size: 1em;
     }
 }

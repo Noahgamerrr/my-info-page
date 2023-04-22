@@ -3,7 +3,6 @@ import React from "react";
 export default function Language(props) {
     const [desc, setDesc] = React.useState("");
     const file = `/descriptions/${props.item.text}`;
-    console.log(file);
     React.useEffect(() => {
         fetch(file)
             .then(t => t.text())
