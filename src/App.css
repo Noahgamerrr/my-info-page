@@ -141,11 +141,20 @@ li > p {
 .link {
     text-decoration: none;
     color: grey;
+    background: linear-gradient(to right, white, white), linear-gradient(grey, grey);
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
 }
 
 .link:hover {
     color: grey;
-    text-decoration: underline;
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
+.opacity-lg-50 {
+    opacity: 0.5;
 }
 
 .project-link {
@@ -155,7 +164,7 @@ li > p {
     text-shadow: 0 0 5px black;
     position: relative;
     text-align: center;
-    opacity: 0.5;
+    transition: opacity 0.3s;
 }
 
 .project-link:hover {
@@ -172,6 +181,24 @@ li > p {
 
 .project-image {
     width: 100%;
+}
+
+.bottom-1 {
+    bottom: 1%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.github-img {
+    background-color: white;
+    width: 20%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -210,6 +237,14 @@ li > p {
 
     .h-lg-100 {
         height: auto;
+    }
+
+    .opacity-lg-50 {
+        opacity: 1;
+    }
+
+    .minh-100 {
+        min-height: 100vh;
     }
 }
 

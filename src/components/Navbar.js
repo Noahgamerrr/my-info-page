@@ -25,6 +25,12 @@ export default function Navbar() {
                         </Link>
                     </div>
                 </nav>
+                <a href="https://github.com/Noahgamerrr" 
+                   className="d-none d-lg-inline position-fixed bottom-1"
+                   style={{"width": "3%"}}
+                >
+                    <img src="./images/github.svg" alt="github" style={{width: "100%"}}/>
+                </a>
             </div>
             <Outlet />
         </>
