@@ -15,7 +15,7 @@ import Error404 from './pages/Error404';
 function App() {
   return (
     <div className='h-lg-100 position-relative minh-100'>
-      <BrowserRouter>
+      <BrowserRouter basename='/my-info-page'>
         <Header/>
         <div className="container-fluid">
           <div className='row h-lg-100'>

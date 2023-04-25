@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Technology(props) {
     const [desc, setDesc] = React.useState("");
-    const file = `/descriptions/technologies/${props.item.text}`;
+    const file = `./descriptions/technologies/${props.item.text}`;
     React.useEffect(() => {
         fetch(file)
             .then(t => t.text())
