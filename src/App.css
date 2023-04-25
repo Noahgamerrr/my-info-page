@@ -6,55 +6,101 @@
     color: rgb(10, 88, 202);
 }
 
-.language-grid-1, .language-grid-2 {
+.technology-grid-1, .technology-grid-2 {
     display: grid;
     grid-template-rows: 3em auto;
 }
 
-.language-grid-1 {
+.technology-grid-1 {
     grid-template-columns: 15% auto;
 }
 
-.language-grid-2 {
+.technology-grid-2 {
     grid-template-columns: auto 15%;
 }
 
-.language-title-1 {
+.technology-title-1 {
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
 }
 
-.language-title-2 {
+.technology-title-2 {
     grid-row: 1 / span 1;
     grid-column: 2 / span 1;
 }
 
-.language-image-1 {
+.technology-image-1 {
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
 }
 
-.language-image-2 {
+.technology-image-2 {
     grid-row: 2 / span 1;
     grid-column: 2 / span 1;
     align-self: start;
 }
 
-.language-image-1, .language-image-2 {
+.technology-image-1, .technology-image-2 {
     width: 80%;
     margin: 0 auto;
 }
 
-.language-description-1 {
+.technology-description-1 {
     grid-row: 2 / span 2;
     grid-column: 2 / span 1;
     align-self: center;
 }
 
-.language-description-2 {
+.technology-description-2 {
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
     align-self: center;
+}
+
+.language-grid-1, .language-grid-2 {
+    display: grid;
+    width: 60%;
+    margin: auto;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto auto;
+}
+
+.language-name-1, .language-name-2 {
+    grid-row: 1 / span 1;
+}
+
+.language-name-1 {
+    grid-column: 1 / span 1;
+}
+
+.language-name-2 {
+    grid-column: 3 / span 2;
+}
+
+.language-image-1, .language-image-2 {
+    width: 100%;
+    grid-row: 1 / span 2;
+    align-self: center;
+}
+
+.language-image-1 {
+    grid-column: 3 / span 1;
+}
+
+.language-image-2 {
+    grid-column: 1 / span 1;
+}
+
+.language-level-1, .language-level-2 {
+    grid-row: 2 / span 2;
+}
+
+.language-level-1 {
+    grid-column: 1 / span 1;
+}
+
+.language-level-2 {
+    grid-column: 3 / span 1;
 }
 
 .position-lg-fixed {
@@ -108,23 +154,23 @@ li > p {
         margin-top: 0;
     }
 
-    .language-grid-1, .language-grid-2 {
+    .technology-grid-1, .technology-grid-2 {
         display: block;
     }
 
-    .language-image-1, .language-image-2 {
+    .technology-image-1, .technology-image-2 {
         display: inline-block;
         width: 20%;
         position: relative;
         left: 30%;
     }
 
-    .language-title-1, .language-title-2 {
+    .technology-title-1, .technology-title-2 {
         display: inline-block;
         width: 50%;
     }
 
-    .language-description-1, .language-description-2 {
+    .technology-description-1, .technology-description-2 {
         margin-bottom: 5%;
     }
 

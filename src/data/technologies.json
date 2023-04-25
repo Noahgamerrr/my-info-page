@@ -2,43 +2,43 @@
     {
         "id": 1,
         "name": "C",
-        "img": "technologies/c.png",
-        "text": "technologies/c.txt"
+        "img": "c.png",
+        "text": "c.txt"
     },
     {
         "id": 2,
         "name": "Java",
-        "img": "technologies/java.png",
-        "text": "technologies/java.txt"
+        "img": "java.png",
+        "text": "java.txt"
     },
     {
         "id": 3,
         "name": "JavaScript",
-        "img": "technologies/js.png",
-        "text": "technologies/js.txt"
+        "img": "js.png",
+        "text": "js.txt"
     },
     {
         "id": 4,
         "name": "HTML/CSS",
-        "img": "technologies/html-css.png",
-        "text": "technologies/html-css.txt"
+        "img": "html-css.png",
+        "text": "html-css.txt"
     },
     {
         "id": 5,
         "name": "Python",
-        "img": "technologies/python.png",
-        "text": "technologies/python.txt"
+        "img": "python.png",
+        "text": "python.txt"
     },
     {
         "id": 6,
         "name": "Oracle SQL",
-        "img": "technologies/sql.png",
-        "text": "technologies/sql.txt"
+        "img": "sql.png",
+        "text": "sql.txt"
     },
     {
         "id": 7,
         "name": "React.js",
-        "img": "technologies/react.png",
-        "text": "technologies/react.txt"
+        "img": "react.png",
+        "text": "react.txt"
     }
 ]

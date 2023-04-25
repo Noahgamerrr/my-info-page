@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "German",
+        "img": "german.png",
+        "level": "Native"
+    },
+    {
+        "id": 2,
+        "name": "English",
+        "img": "english.png",
+        "level": "C1"
+    },
+    {
+        "id": 3,
+        "name": "Croatian",
+        "img": "croatian.png",
+        "level": "B2"
+    },
+    {
+        "id": 4,
+        "name": "French",
+        "img": "french.png",
+        "level": "B2"
+    },
+    {
+        "id": 5,
+        "name": "Latin",
+        "img": "latin.png",
+        "level": "B1"
+    },
+    {
+        "id": 6,
+        "name": "Finnish",
+        "img": "finnish.png",
+        "level": "A2"
+    }
+]
