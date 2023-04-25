@@ -1,0 +1,4 @@
+I started learning SQL as part of a 6-week internship at Infineon Technologies in summer 2022. Of course,
+I only learned to write queries and could not write my own tables, but I quickly learned the missing
+information at school, so that my knowledge of this language is more complete. By the end of June 2023,
+I will have also aqcuired PL/SQL to further complete my skills.

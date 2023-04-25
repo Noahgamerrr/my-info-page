@@ -1,0 +1,4 @@
+I started to learn React.js myself because it seemed very interesting to me, and I wasn't disappointed.
+The functionalities it offers make writing web-apps a lot easier than in vanilla JavaScript because
+of the integrated HTML-syntax in JSX. This portfolio is currently my only project using React, but I'm
+intending for more to come.
