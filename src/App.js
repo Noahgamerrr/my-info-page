@@ -5,10 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import AboutMe from './pages/AboutMe';
 import Technologies from './pages/Technologies';
 import Languages from './pages/Languages';
+import Projects from './pages/Projects';
 import Error404 from './pages/Error404';
-import AboutMe from './pages/AboutMe';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path='about-me' element={<AboutMe/>}/>
                 <Route path='technologies' element={<Technologies/>}/>
                 <Route path='languages' element={<Languages/>}/>
+                <Route path='projects' element={<Projects/>}/>
                 <Route path='*' element={<Error404/>}/>
               </Routes>
             </main>

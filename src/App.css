@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.z-100 {
+    z-index: 100;
+}
+
 .link-active {
     color: rgb(10, 88, 202);
 }
@@ -144,6 +148,32 @@ li > p {
     text-decoration: underline;
 }
 
+.project-link {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    text-shadow: 0 0 5px black;
+    position: relative;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.project-link:hover {
+    color: white;
+    opacity: 1;
+}
+
+.project-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-image {
+    width: 100%;
+}
+
 @media only screen and (max-width: 992px) {
     .position-lg-fixed {
         position: relative;
@@ -190,5 +220,9 @@ li > p {
 
     figcaption, li {
         font-size: 1em;
+    }
+
+    .project-link {
+        display: block;
     }
 }

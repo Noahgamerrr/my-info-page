@@ -20,6 +20,9 @@ export default function Navbar() {
                         <Link className="list-group-item" to="/languages" onClick={() => setActive("languages")}>
                             <span className={active === "languages" ? "link-active" : undefined}>Languages</span>
                         </Link>
+                        <Link className="list-group-item" to="/projects" onClick={() => setActive("projects")}>
+                            <span className={active === "projects" ? "link-active" : undefined}>Projects</span>
+                        </Link>
                     </div>
                 </nav>
             </div>
