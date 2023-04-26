@@ -11,9 +11,6 @@ export default function Navbar() {
                         <Link className="list-group-item" to="/" onClick={() => setActive("home")}>
                             <span className={active === "home" ? "link-active" : undefined}>Home</span>
                         </Link>
-                        <Link className="list-group-item" to="/about-me" onClick={() => setActive("about")}>
-                            <span className={active === "about" ? "link-active" : undefined}>About me</span>
-                        </Link>
                         <Link className="list-group-item" to="/technologies" onClick={() => setActive("technologies")}>
                             <span className={active === "technologies" ? "link-active" : undefined}>Technologies</span>
                         </Link>

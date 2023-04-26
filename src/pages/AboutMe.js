@@ -6,7 +6,6 @@ export default function AboutMe() {
                 <div className="row">
                     <figure className="col-lg-3 col-md-4 me">
                         <img src="images/me.jpeg" alt="me" className="img-fluid me"/>
-                        <figcaption>That's me, Noah Arsi&#263;</figcaption>
                     </figure>
                     <span className="col-lg-9 col-md-8 mb-4">
                         Hi, I'm Noah Arsi&#263;, currently 17 years old and learning computer science
@@ -23,11 +22,12 @@ export default function AboutMe() {
                         <h3>My hobbies include:</h3>
                         <ul>
                             <li>Programming</li>
-                            <li>Playing video games</li>
                             <li>Riding my bike</li>
                             <li>Reading</li>
                             <li>Languages & linguistics</li>
                             <li>Mathematics</li>
+                            <li>Chess</li>
+                            <li>Playing video games</li>
                         </ul>
                     </div>
                     <div className="col-md-4 mb-4">

@@ -6,7 +6,6 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import AboutMe from './pages/AboutMe';
 import Technologies from './pages/Technologies';
 import Languages from './pages/Languages';
 import Projects from './pages/Projects';
@@ -23,7 +22,6 @@ function App() {
             <main className='col-lg-10 ps-lg-4 pt-3 pt-lg-5 pb-4 mb-5 mb-lg-0'>
               <Routes>
                 <Route path='/' element={<Home/>}/>
-                <Route path='about-me' element={<AboutMe/>}/>
                 <Route path='technologies' element={<Technologies/>}/>
                 <Route path='languages' element={<Languages/>}/>
                 <Route path='projects' element={<Projects/>}/>
