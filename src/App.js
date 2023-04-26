@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {HashRouter, Routes, Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
@@ -15,7 +15,7 @@ import Error404 from './pages/Error404';
 function App() {
   return (
     <div className='h-lg-100 position-relative minh-100'>
-      <BrowserRouter basename='/my-info-page'>
+      <HashRouter>
         <Header/>
         <div className="container-fluid">
           <div className='row h-lg-100'>
@@ -33,7 +33,7 @@ function App() {
           </div>
         </div>
         <Footer/>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
