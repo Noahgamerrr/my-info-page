@@ -1,10 +1,23 @@
 import React from "react";
 
 export default function Home() {
+    const fadeRef = React.useRef([]);
+
+    React.useEffect(() => {
+        if (fadeRef.current.length > 0) {
+            let delay = 0;
+            for (let c in fadeRef.current) {
+                delay = c * 0.5;
+                fadeRef.current[c].style.animationDelay = `${delay}s`;
+            }
+            delay = 0.5 * (fadeRef.current.length + 1);
+        }
+    });
+
     return (
         <>
             <h1>Home</h1>
-            <div className="container-fluid">
+            <div ref={r => fadeRef.current[0] = r} className="container-fluid fade-in">
                 <div className="row">
                     <figure className="col-lg-3 col-md-4 me">
                         <img src="images/me.jpeg" alt="me" className="img-fluid me"/>
@@ -20,7 +33,7 @@ export default function Home() {
             </div>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-4 mb-4">
+                    <div ref={r => fadeRef.current[1] = r} className="col-md-4 mb-4 fade-in">
                         <h3>My hobbies include:</h3>
                         <ul>
                             <li>Programming</li>
@@ -32,7 +45,7 @@ export default function Home() {
                             <li>Playing video games</li>
                         </ul>
                     </div>
-                    <div className="col-md-4 mb-4">
+                    <div ref={r => fadeRef.current[2] = r} className="col-md-4 mb-4 fade-in">
                         <h3>Internships:</h3>
                         <ul>
                             <li>
@@ -41,7 +54,7 @@ export default function Home() {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-md-4">
+                    <div ref={r => fadeRef.current[3] = r} className="col-md-4 fade-in">
                         <h3>Competitions:</h3>
                         <ul>
                             <li>

@@ -5,10 +5,12 @@ export default function Projects() {
     let projectsColumnOne = [];
     let projectsColumnTwo = [];
     let onFirstColumn = true;
+    let projCount = 0;
     projects.forEach(p => {
-        let projectElem = <Project key={p.id} item={p}/>;
+        let projectElem = <Project order={projCount} key={p.id} item={p}/>;
         onFirstColumn ? projectsColumnOne.push(projectElem) : projectsColumnTwo.push(projectElem);
         onFirstColumn = !onFirstColumn;
+        projCount++;
     })
     return (
         <>

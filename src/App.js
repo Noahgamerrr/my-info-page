@@ -13,7 +13,7 @@ import Error404 from './pages/Error404';
 
 function App() {
   return (
-    <div className='h-lg-100 position-relative minh-100'>
+    <div className='h-lg-100 position-relative'>
       <HashRouter>
         <Header/>
         <div className="container-fluid">

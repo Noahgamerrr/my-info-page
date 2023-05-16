@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <div className="bg-dark footer mt-5">
+        <div className="bg-dark footer">
             <a href="https://github.com/Noahgamerrr" 
                 className="d-lg-none"
                 style={{"width": "2.5rem"}}

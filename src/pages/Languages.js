@@ -2,7 +2,12 @@ import languages from "../data/languages.json";
 import Language from "../components/Language";
 
 export default function Languages() {
-    const langElements = languages.map(lang => <Language key={lang.id} item={lang}/>);
+    let langCount = -1;
+
+    const langElements = languages.map(lang => {
+        langCount++;
+        return <Language order={langCount} key={lang.id} item={lang}/>
+    });
 
     return (
         <>

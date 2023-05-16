@@ -188,9 +188,19 @@ li > p {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translate(0, 100px);
+    animation: f-in 1s forwards;
+}
+
+.fade-in-50 {
+    opacity: 0;
+    transform: translate(0, 100px);
+    animation: f-in-50 1s forwards;
 }
 
 .github-img {
@@ -246,6 +256,12 @@ li > p {
     .minh-100 {
         min-height: 100vh;
     }
+
+    .fade-in-50 {
+        opacity: 0;
+        transform: translate(0, 100px);
+        animation: f-in 1s forwards;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -259,5 +275,19 @@ li > p {
 
     .project-link {
         display: block;
+    }
+}
+
+@keyframes f-in {
+    100% {
+        transform:translate(0, 0);
+        opacity: 1; 
+    }
+}
+
+@keyframes f-in-50 {
+    100% {
+        transform:translate(0, 0);
+        opacity: 0.5; 
     }
 }
