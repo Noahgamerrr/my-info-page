@@ -141,14 +141,14 @@ li > p {
 .link {
     text-decoration: none;
     color: grey;
-    background: linear-gradient(to right, white, white), linear-gradient(grey, grey);
+    background: linear-gradient(to right, grey, grey), linear-gradient(black, black);
     background-size: 100% 0.1em, 0 0.1em;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
-    transition: background-size 400ms;
+    transition: background-size 1s;
 }
 
-.link:hover {
+.link:hover, .link:focus {
     color: grey;
     background-size: 0 0.1em, 100% 0.1em;
 }
