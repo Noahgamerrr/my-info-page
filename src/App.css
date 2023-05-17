@@ -193,13 +193,11 @@ li > p {
 
 .fade-in {
     opacity: 0;
-    transform: translate(0, 100px);
     animation: f-in 1s forwards;
 }
 
 .fade-in-50 {
     opacity: 0;
-    transform: translate(0, 100px);
     animation: f-in-50 1s forwards;
 }
 
@@ -259,7 +257,6 @@ li > p {
 
     .fade-in-50 {
         opacity: 0;
-        transform: translate(0, 100px);
         animation: f-in 1s forwards;
     }
 }

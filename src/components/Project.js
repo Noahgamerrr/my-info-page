@@ -9,9 +9,11 @@ export default function Project(props) {
     });
 
     return (
-        <a ref={fadeRef} href={props.item.link} className="project-link opacity-lg-50 fade-in-50">
-            <img src={`./images/projects/${props.item.image}`} className="project-image mb-3" alt={props.item.name}/>
-            <h2 className="project-name">{props.item.name}</h2>
-        </a>
+        <div ref={fadeRef} className="fade-in">
+            <a href={props.item.link} className="opacity-lg-50 project-link">
+                <img src={`./images/projects/${props.item.image}`} className="project-image mb-3" alt={props.item.name}/>
+                <h2 className="project-name">{props.item.name}</h2>
+            </a>
+        </div>
     )
 }
