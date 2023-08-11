@@ -22,12 +22,20 @@ export default function Navbar() {
                         </Link>
                     </div>
                 </nav>
-                <a href="https://github.com/Noahgamerrr" 
-                   className="d-none d-lg-inline position-fixed bottom-1"
-                   style={{"width": "3%"}}
-                >
-                    <img src="./images/github.svg" alt="github" style={{width: "100%"}}/>
-                </a>
+                <div>
+                    <a href="https://github.com/Noahgamerrr" 
+                    className="d-none d-lg-inline position-fixed bottom-1"
+                    style={{"width": "3%"}}
+                    >
+                        <img src="./images/github.svg" alt="GitHub" style={{width: "100%"}}/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arsicn/" 
+                    className="d-none d-lg-inline position-fixed bottom-1"
+                    style={{"width": "3%", marginLeft: "4%"}}
+                    >
+                        <img src="./images/linkedin.svg" alt="LinkedIn" style={{width: "100%"}}/>
+                    </a>
+                </div>
             </div>
             <Outlet />
         </>

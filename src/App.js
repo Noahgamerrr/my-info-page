@@ -13,11 +13,11 @@ import Error404 from './pages/Error404';
 
 function App() {
   return (
-    <div className='h-lg-100 position-relative'>
+    <div className='h-100 position-relative'>
       <HashRouter>
         <Header/>
         <div className="container-fluid">
-          <div className='row h-lg-100'>
+          <div className='row h-100'>
             <Navbar/>
             <main className='col-lg-10 ps-lg-4 pt-3 pt-lg-5 pb-4 mb-5 mb-lg-0'>
               <Routes>

@@ -49,8 +49,12 @@ export default function Home() {
                         <h3>Internships:</h3>
                         <ul>
                             <li>
-                                <p className="list-title">Summer 2023</p>
+                                <p className="list-title">Summer 2022</p>
                                 <p>SQL-developer at Infineon Technologies</p>
+                            </li>
+                            <li>
+                                <p className="list-title">Summer 2023</p>
+                                <p>Python-developer at Infineon Technologies</p>
                             </li>
                         </ul>
                     </div>
