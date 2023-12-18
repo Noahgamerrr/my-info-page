@@ -1,4 +1,7 @@
 import React from "react";
+import internships from "../data/internships.json";
+import competitions from "../data/competitions.json";
+import CompetitionYear from "../components/CompetitionYear";
 
 export default function Home() {
     const fadeRef = React.useRef([]);
@@ -13,6 +16,15 @@ export default function Home() {
             delay = 0.5 * (fadeRef.current.length + 1);
         }
     });
+
+    const internshipElems = internships.map(job => {
+        return <li>
+            <p className="list-title">{job.timeSpan}</p>
+            <p>{job.description}</p>
+        </li>
+    });
+
+    const competitionElems = competitions.map(comp => <CompetitionYear key={comp.year} item={comp}/>)
 
     return (
         <>
@@ -46,34 +58,14 @@ export default function Home() {
                         </ul>
                     </div>
                     <div ref={r => fadeRef.current[2] = r} className="col-md-4 mb-4 fade-in">
-                        <h3>Internships:</h3>
+                        <h3>Internships/Jobs:</h3>
                         <ul>
-                            <li>
-                                <p className="list-title">Summer 2022</p>
-                                <p>SQL-developer at Infineon Technologies</p>
-                            </li>
-                            <li>
-                                <p className="list-title">Summer 2023</p>
-                                <p>Python-developer at Infineon Technologies</p>
-                            </li>
+                            {internshipElems}
                         </ul>
                     </div>
                     <div ref={r => fadeRef.current[3] = r} className="col-md-4 fade-in">
                         <h3>Competitions:</h3>
-                        <ul>
-                            <li>
-                                <p className="list-title">2019</p>
-                                <a className="link" href="https://oemo.at/OeMO/Ergebnisse/LWA/kst/2019">3rd Price at the Junior Mathematical Olympiad in Carinthia & Styria</a>
-                            </li>
-                            <li>
-                                <p className="list-title">2020</p>
-                                <a className="link" href="https://oemo.at/OeMO/Ergebnisse/LWA/kst/2020">2nd Price at the Junior Mathematical Olympiad in Carinthia & Styria</a>
-                            </li>
-                            <li>
-                                <p className="list-title">2023</p>
-                                <a className="link" href="https://www.coding-contest.at/wp-content/uploads/2023/03/KCC11_Ergebnis_fuer_Homepage.pdf">19th place at the KNAPP Coding Contest</a>
-                            </li>
-                        </ul>
+                        {competitionElems}
                     </div>
                 </div>
             </div>

@@ -37,8 +37,20 @@
     },
     {
         "id": 7,
-        "name": "React.js",
+        "name": "ReactJS",
         "img": "react.png",
         "text": "react.txt"
+    },
+    {
+        "id": 8,
+        "name": "AstroJS",
+        "img": "astro.png",
+        "text": "astro.txt"
+    },
+    {
+        "id": 9,
+        "name": "Svelte",
+        "img": "svelte.png",
+        "text": "svelte.txt"
     }
 ]
