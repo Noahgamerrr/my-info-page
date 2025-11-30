@@ -1,3 +1,0 @@
-My main project using HTML/CSS is a website with German lessons I created for a Discord-Server. The
-biggest difficulty was to have a nice-looking page while also keeping the responsiveness in mind, but
-also the navbar which I didn't want to hardcode on every-single page was starting to bug me.

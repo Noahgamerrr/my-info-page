@@ -1,4 +1,0 @@
-As already mentioned, I'm currently using Svelte during my part-time-job at FlyByGuys for the components, which familiarized
-me quite well with the Syntax of Svelte, and I like its separation of scripting and JSX-tags. It feels better structured than
-React in my opinion, and there isn't as much to care about as in React, so that developing in Svelte feels easier and more
-efficient.

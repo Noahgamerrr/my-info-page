@@ -1,4 +1,0 @@
-In my part-time job at FlyByGuys, we are building web-apps using Astro and Svelte. Astro is being used for server-side
-logic as well as the main pages, whereas Svelte is being used for the components as well as client-side logic.
-Both are quite similar to React, and I feel like creating projects on my own, but I intend for a project
-written solely in Astro to familiarize myself even more with its syntax.

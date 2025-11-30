@@ -1,7 +1,0 @@
-For web-applications, we started to learn JavaScript at year two. While I didn't write projects
-up until a year ago, I quickly gained interest as soon as I learned about frameworks like React.js or
-Angular. Creating DOM-elements in vanilla JavaScript is of course tedious, but luckily JSX facilitates 
-this process a lot so that writing code is more enjoyable. Other than that, I really like the syntax
-of JavaScript, as it makes it easier to write code which in other languages would have needed more
-lines. My projects include a definition-grabber from the web and a group project on JavaScript
-itself.
