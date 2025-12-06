@@ -9,7 +9,7 @@ interface TimelineElementProps {
 
 export const Timeline = ({titles}: TimelineProps) => {
     return (
-        <div className="fixed w-1/8 h-3/4 flex flex-col justify-between top-1/2 -translate-y-1/2">
+        <div className="fixed w-43 h-3/4 flex flex-col justify-between top-1/2 -translate-y-1/2">
             {titles.map((title, idx) => 
                 <TimelineElement 
                     title={title} 
