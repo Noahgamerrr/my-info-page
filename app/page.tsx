@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import { Timeline } from './components/timeline/timeline';
 import Landing from './components/screens/landing';
 import { Element } from 'react-scroll';
+import WorkExperience from './components/screens/work_experience';
 // import { RefObject, useEffect, useRef, useState } from 'react';
 
 
@@ -43,6 +44,8 @@ export default function Home() {
             <Landing 
                 gentiumFont={gentiumFont.className}
             />
+            <WorkExperience/>
+
             {
             /*
             <Element name="test">

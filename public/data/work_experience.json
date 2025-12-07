@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Data Analysis Assistent @ Infineon",
+        "when": "Summer 2022",
+        "technologies": "Oracle SQL, Tableau"
+    },
+    {
+        "title": "Data Analysis Assistent @ Infineon",
+        "when": "Summer 2023",
+        "technologies": "Python, Oracle SQL, Tableau"
+    },
+    {
+        "title": "Fullstack Webdeveloper @ FlyByGuys",
+        "when": "September 2023 - March 2024",
+        "technologies": "Astro, Svelte, Typescript"
+    },
+    {
+        "title": "Fullstack Webdeveloper @ Kelag",
+        "when": "Summer 2024",
+        "technologies": "Blazor, SQL Server, C#"
+    },
+    {
+        "title": "Basic Military Service",
+        "when": "July 2025 - January 2026",
+        "technologies": ""
+    }
+]

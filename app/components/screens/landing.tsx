@@ -14,9 +14,9 @@ export default function Landing({ gentiumFont } : LandingProps) {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (scrollTop < window.scrollY) {
-                scroller.scrollTo('test', {
-                    duration: 40,
+            if (scrollTop < window.scrollY && scrollTop < 100) {
+                scroller.scrollTo('work_experience', {
+                    duration: 700,
                     delay: 0,
                     smooth: true
                 });
