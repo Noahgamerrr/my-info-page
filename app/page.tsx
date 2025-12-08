@@ -38,14 +38,15 @@ const titles = ["Work experience", "Technologies", "Projects", "About me"]
 export default function Home() {
     return (
         <main 
-            className={`min-h-screen w-full px-16 sm:items-start ${interFont.className}`}
+            className={`min-h-screen w-full sm:items-start ${interFont.className}`}
         >
             <Timeline titles={titles}/>
-            <Landing 
+            <div className='lg:w-[calc(100%-400px)] ml-auto'>
+                <Landing 
                 gentiumFont={gentiumFont.className}
-            />
-            <WorkExperience/>
-
+                />
+                <WorkExperience/>
+            </div>
             {
             /*
             <Element name="test">

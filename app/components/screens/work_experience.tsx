@@ -1,5 +1,7 @@
 import workExperienceData from "@/public/data/work_experience.json"
-import { Element } from "react-scroll"
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useEffect, useRef } from "react";
 
 interface WorkExperienceEntry {
     title: string,
@@ -11,22 +13,58 @@ const workExperienceEntries = workExperienceData as WorkExperienceEntry[]
 
 
 export default function WorkExperience() {
-    return (
-        <div className='lg:w-[calc(100%-300px)] h-screen ml-auto flex flex-col justify-center'>
-            <Element name="work_experience">
-                <p className="font-bold text-6xl mb-10">Work experience</p>
-            </Element>
-            {
-                workExperienceEntries.map((w, idx) => (
-                        <div className="mb-5" key={idx}>
-                            <p className="text-3xl underline">{w.title}</p>
-                            <p className="text-xl">{w.when}</p>
-                            <p className="text-xl">{w.technologies}</p>
-                        </div>
-                    )
-                )
+    const sectionRef = useRef(null);
+    const triggerRef = useRef(null);
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    useEffect(() => {
+        const pin = gsap.fromTo(sectionRef.current, {
+            translateX: 0
+        }, {
+            translateX: "-300vw",
+            ease: "none",
+            duration: 1,
+            scrollTrigger: {
+                trigger: triggerRef.current,
+                start: "top top",
+                end: "2000 top",
+                scrub: 0.6,
+                pin: true
             }
-            
+        })
+
+        return () => {
+            pin.kill()
+        }
+    }, [])
+
+    return (
+        <div className='flex flex-col justify-center'>
+            <p className="font-bold text-6xl mb-10 sticky top-1/8">Work experience</p>
+            <section className="overflow-hidden">
+                <div ref={triggerRef}>
+                    <div 
+                        ref={sectionRef}
+                        className="flex flex-row relative h-screen w-[400vw]"
+                    >
+                        {
+                            workExperienceEntries.map((w, idx) => (
+                                <div 
+                                    className="mb-5 h-screen w-screen flex flex-col justify-center items-center" 
+                                    key={idx}
+                                >
+                                    <div>
+                                        <p className="text-3xl underline">{w.title}</p>
+                                        <p className="text-xl">{w.when}</p>
+                                        <p className="text-xl">{w.technologies}</p>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
