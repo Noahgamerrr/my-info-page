@@ -22,13 +22,13 @@ export default function WorkExperience() {
         const pin = gsap.fromTo(sectionRef.current, {
             translateX: 0
         }, {
-            translateX: "-300vw",
+            translateX: "-325vw",
             ease: "none",
             duration: 1,
             scrollTrigger: {
                 trigger: triggerRef.current,
                 start: "top top",
-                end: "2000 top",
+                end: "3000 top",
                 scrub: 0.6,
                 pin: true
             }
@@ -41,7 +41,7 @@ export default function WorkExperience() {
 
     return (
         <div className='flex flex-col justify-center'>
-            <p className="font-bold text-6xl mb-10 sticky top-1/8">Work experience</p>
+            <p className="font-bold text-6xl sticky top-1/8">Work experience</p>
             <section className="overflow-hidden">
                 <div ref={triggerRef}>
                     <div 

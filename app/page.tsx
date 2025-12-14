@@ -4,6 +4,7 @@ import { Timeline } from './components/timeline/timeline';
 import Landing from './components/screens/landing';
 import { Element } from 'react-scroll';
 import WorkExperience from './components/screens/work_experience';
+import Technologies from './components/screens/technologies';
 // import { RefObject, useEffect, useRef, useState } from 'react';
 
 
@@ -46,6 +47,7 @@ export default function Home() {
                 gentiumFont={gentiumFont.className}
                 />
                 <WorkExperience/>
+                <Technologies/>
             </div>
             {
             /*
