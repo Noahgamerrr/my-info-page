@@ -16,7 +16,6 @@
     "next": "^16.0.7",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "react-scroll": "^1.9.3",
     "two.js": "^0.8.22"
   },
   "devDependencies": {
