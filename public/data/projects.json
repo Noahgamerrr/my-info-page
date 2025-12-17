@@ -1,0 +1,79 @@
+[
+    {
+        "name": "CMap",
+        "description": "Map implementation in C",
+        "src": "cMap.png",
+        "technologies": ["C"],
+        "repo": "https://github.com/Noahgamerrr/CMap"
+    },
+    {
+        "name": "Cordle",
+        "description": "Wordle written in C",
+        "src": "cordle.png",
+        "technologies": ["C"],
+        "repo": "https://github.com/Noahgamerrr/Cordle"
+    },
+    {
+        "name": "Grabdef",
+        "description": "A script which grabs definitions of english words from the web",
+        "src": "grabdef.png",
+        "technologies": ["JavaScript"],
+        "repo": "https://github.com/Noahgamerrr/grabdef"
+    },
+    {
+        "name": "JS Tutorial",
+        "description": "Tutorial for JavaScript (group project)",
+        "src": "js-tutorial.png",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "repo": "https://github.com/kendlbat/wmc_groupwork_nov21"
+    },
+    {
+        "name": "JSweeper",
+        "description": "Minesweeper in Java",
+        "src": "minesweeper.png",
+        "technologies": ["Java"],
+        "repo": "https://github.com/Noahgamerrr/JSweeper"
+    },
+    {
+        "name": "JPong",
+        "description": "Pong in Java",
+        "src": "pong.png",
+        "technologies": ["Java"],
+        "repo": "https://github.com/Noahgamerrr/JPong"
+    },
+    {
+        "name": "Portfolio",
+        "description": "My portfolio page",
+        "src": "portfolio.png",
+        "technologies": ["Next.js", "TailwindCSS"],
+        "repo": "https://github.com/Noahgamerrr/my-info-page"
+    },
+    {
+        "name": "PyChess",
+        "description": "Chess in Python",
+        "src": "pychess.png",
+        "technologies": ["Python"],
+        "repo": "https://github.com/Noahgamerrr/PyChess"
+    },
+    {
+        "name": "JSnake",
+        "description": "Snake in Java",
+        "src": "snake.png",
+        "technologies": ["Java"],
+        "repo": "https://github.com/Noahgamerrr/JSnake"
+    },
+    {
+        "name": "Space_Jnvaders",
+        "description": "Space Invaders in Java",
+        "src": "space-invaders.png",
+        "technologies": ["Java"],
+        "repo": "https://github.com/Noahgamerrr/Space_Jnvaders"
+    },
+    {
+        "name": "Jetris",
+        "description": "Tetris in Java",
+        "src": "tetris.png",
+        "technologies": ["Java"],
+        "repo": "https://github.com/Noahgamerrr/Jetris"
+    }
+]

@@ -1,0 +1,47 @@
+import React, { useEffect, useRef, useState } from 'react'
+import { Badge, Card } from 'flowbite-react'
+import Image from 'next/image'
+
+interface ProjectCardProps {
+    imageSrc: string,
+    name: string,
+    description: string,
+    technologies: string[],
+    className? : string
+}
+
+export default function ProjectCard({imageSrc, name, description, technologies, className}: ProjectCardProps) {
+    const imgDivRef = useRef<HTMLDivElement | null>(null);
+    const [height, setHeight] = useState(0);
+
+    useEffect(() => {
+        setHeight(imgDivRef.current?.clientWidth || 0)
+    }, []);
+
+    return (
+        <Card 
+            className={`bg-gray-900 text-white w-1/4 h-4/7 mx-auto rounded-2xl ${className}`}
+        >
+            <div className='flex flex-col h-full justify-between'>
+                <div>
+                    <div ref={imgDivRef} className='relative w-full rounded-2xl overflow-hidden' style={{height}}>
+                        <Image
+                            className='pt-0'
+                            src={imageSrc} 
+                            alt={name}
+                            fill={true}
+                        />
+                    </div>
+                    <h5 className='text-2xl font-bold pt-4'>{name}</h5>
+                </div>
+                <p>{description}</p>
+                <div className='flex flex-row gap-2'>
+                    {technologies.map((t, idx) => (
+                        <Badge key={idx} className='rounded-full'>{t}</Badge>
+                    ))}
+                </div>
+            </div>
+            
+        </Card>
+    )
+}

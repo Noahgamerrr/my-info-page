@@ -146,7 +146,10 @@ export default function Technologies() {
 
             Matter.Body.scale(entity, 1 / circle.radius, 1 / circle.radius);
             Matter.Body.scale(entity, newRadius, newRadius);
-            circle.radius = newRadius
+            entity.circleRadius = newRadius;
+            circle.radius = newRadius;
+            console.log(entity.position)
+            console.log(child.position)
         }
     }
 
