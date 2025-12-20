@@ -82,7 +82,7 @@ export default function Technologies() {
         const boundaryRight = createBoundary(width, height);
         const boundaryBottom = createBoundary(height, width);
 
-        if (!boundaryTop || ! boundaryBottom || !boundaryLeft || !boundaryRight) return null;
+        if (!boundaryTop || !boundaryBottom || !boundaryLeft || !boundaryRight) return null;
 
         boundaries.top = boundaryTop;
         boundaries.left = boundaryLeft;

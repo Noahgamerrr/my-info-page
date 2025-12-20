@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import  { Element, scroller } from "react-scroll";
+import { Element, scroller } from "react-scroll";
 
 interface LandingProps {
     gentiumFont: string,
 }
 
-export default function Landing({ gentiumFont } : LandingProps) {
+export default function Landing({ gentiumFont }: LandingProps) {
     return (
         <div className='h-screen flex flex-col justify-center'>
-            <p 
+            <p
                 className={`italic h-32 ${gentiumFont} text-9xl`}
             >
                 Noah Arsić

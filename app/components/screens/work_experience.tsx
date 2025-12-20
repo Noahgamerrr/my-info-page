@@ -44,14 +44,14 @@ export default function WorkExperience() {
             <p className="font-bold text-6xl sticky top-1/8">Work experience</p>
             <section className="overflow-hidden">
                 <div ref={triggerRef}>
-                    <div 
+                    <div
                         ref={sectionRef}
                         className="flex flex-row relative h-screen w-[400vw]"
                     >
                         {
                             workExperienceEntries.map((w, idx) => (
-                                <div 
-                                    className="mb-5 h-screen w-screen flex flex-col justify-center items-center" 
+                                <div
+                                    className="mb-5 h-screen w-screen flex flex-col justify-center items-center"
                                     key={idx}
                                 >
                                     <div>

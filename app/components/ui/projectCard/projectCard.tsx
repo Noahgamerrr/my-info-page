@@ -7,10 +7,13 @@ interface ProjectCardProps {
     name: string,
     description: string,
     technologies: string[],
-    className? : string
+    className?: string,
+    position: number
 }
 
-export default function ProjectCard({imageSrc, name, description, technologies, className}: ProjectCardProps) {
+export default function ProjectCard(
+    { imageSrc, name, description, technologies, className, position }: ProjectCardProps
+) {
     const imgDivRef = useRef<HTMLDivElement | null>(null);
     const [height, setHeight] = useState(0);
 
@@ -19,15 +22,19 @@ export default function ProjectCard({imageSrc, name, description, technologies, 
     }, []);
 
     return (
-        <Card 
+        <Card
             className={`bg-gray-900 text-white w-1/4 h-4/7 mx-auto rounded-2xl ${className}`}
+            style={{ 
+                marginLeft: `calc(var(--spacing) * ${position})`,
+                zIndex: 9999 - position
+            }}
         >
             <div className='flex flex-col h-full justify-between'>
                 <div>
-                    <div ref={imgDivRef} className='relative w-full rounded-2xl overflow-hidden' style={{height}}>
+                    <div ref={imgDivRef} className='relative w-full rounded-2xl overflow-hidden' style={{ height }}>
                         <Image
                             className='pt-0'
-                            src={imageSrc} 
+                            src={imageSrc}
                             alt={name}
                             fill={true}
                         />
@@ -41,7 +48,7 @@ export default function ProjectCard({imageSrc, name, description, technologies, 
                     ))}
                 </div>
             </div>
-            
+
         </Card>
     )
 }
