@@ -8,11 +8,12 @@ interface ProjectCardProps {
     description: string,
     technologies: string[],
     className?: string,
-    position: number
+    position: number,
+    repo: string
 }
 
 export default function ProjectCard(
-    { imageSrc, name, description, technologies, className, position }: ProjectCardProps
+    { imageSrc, name, description, technologies, className, position, repo }: ProjectCardProps
 ) {
     const imgDivRef = useRef<HTMLDivElement | null>(null);
     const [height, setHeight] = useState(0);
@@ -28,6 +29,7 @@ export default function ProjectCard(
                 marginLeft: `calc(var(--spacing) * ${position})`,
                 zIndex: 9999 - position
             }}
+            href={repo}
         >
             <div className='flex flex-col h-full justify-between'>
                 <div>

@@ -42,24 +42,9 @@ export default function Projects() {
     }, []);
 
     return (
-        <div className='h-screen w-full relative' ref={triggerRef}>
-            <p className="font-bold text-6xl sticky top-1/8">Projects</p> 
-            {
-                ProjectEntries.map((pe, idx) => (
-                    <ProjectCard
-                        key={idx}
-                        imageSrc={`/images/projects/${pe.src}`}
-                        name={pe.name}
-                        description={pe.description}
-                        technologies={pe.technologies}
-                        className={`top-1/2 -translate-y-1/2 card-scroll absolute left-1/2 -translate-x-1/2 card-${idx}`}
-                        position={idx}
-                    />
-                ))
-            }
-
-            {/*<div className='flex w-full h-full'>
-            <div className='self-center w-full'>
+        <div>
+            <p className="font-bold text-6xl sticky top-1/8">Projects</p>
+            <div className='h-screen w-full relative' ref={triggerRef}>
                 {
                     ProjectEntries.map((pe, idx) => (
                         <ProjectCard
@@ -68,11 +53,13 @@ export default function Projects() {
                             name={pe.name}
                             description={pe.description}
                             technologies={pe.technologies}
+                            className={`top-1/2 -translate-y-1/2 card-scroll absolute left-1/2 -translate-x-1/2 card-${idx}`}
+                            position={idx}
+                            repo={pe.repo}
                         />
                     ))
                 }
             </div>
-        </div>*/}
         </div>
     )
 }

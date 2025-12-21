@@ -2,13 +2,10 @@
 import localFont from 'next/font/local';
 import { Timeline } from './components/ui/timeline/timeline';
 import Landing from './components/screens/landing';
-import { Element } from 'react-scroll';
-import WorkExperience from './components/screens/work_experience';
+import WorkExperience from './components/screens/workExperience';
 import Technologies from './components/screens/technologies';
-import ProjectCard from './components/ui/projectCard/projectCard';
 import Projects from './components/screens/projects';
-// import { RefObject, useEffect, useRef, useState } from 'react';
-
+import AboutMe from './components/screens/aboutMe';
 
 const interFont = localFont({
     src: [
@@ -51,6 +48,7 @@ export default function Home() {
                 <WorkExperience/>
                 <Technologies/>
                 <Projects/>
+                <AboutMe/>
             </div>
         </main>
   );
