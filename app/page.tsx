@@ -6,6 +6,7 @@ import WorkExperience from './components/screens/workExperience';
 import Technologies from './components/screens/technologies';
 import Projects from './components/screens/projects';
 import AboutMe from './components/screens/aboutMe';
+import { useState } from 'react';
 
 const interFont = localFont({
     src: [
@@ -36,18 +37,38 @@ const gentiumFont = localFont({
 const titles = ["Work experience", "Technologies", "Projects", "About me"]
 
 export default function Home() {
+    const [progress, setProgress] = useState([0, 0, 0])
+
+    const handleProgress = (idx: number, p: number) => {
+        const newProgress = progress.map((v, i) => {
+            if (i === idx) return p;
+            if (i < idx) return 1;
+            return 0;
+        });
+        setProgress(newProgress);
+    }
+
     return (
         <main 
             className={`min-h-screen w-full sm:items-start ${interFont.className}`}
         >
-            <Timeline titles={titles}/>
+            <Timeline 
+                titles={titles}
+                progress={progress}
+            />
             <div className='lg:w-[calc(100%-400px)] ml-auto'>
                 <Landing 
                 gentiumFont={gentiumFont.className}
                 />
-                <WorkExperience/>
-                <Technologies/>
-                <Projects/>
+                <WorkExperience
+                    onProgress={(progress) => handleProgress(0, progress)}
+                />
+                <Technologies
+                    onProgress={(progress) => handleProgress(1, progress)}
+                />
+                <Projects
+                    onProgress={(progress) => handleProgress(2, progress)}
+                />
                 <AboutMe/>
             </div>
         </main>

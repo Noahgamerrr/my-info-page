@@ -3,6 +3,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect, useRef } from "react";
 
+interface WorkExperienceProps {
+    onProgress: (progress: number) => void;
+}
+
 interface WorkExperienceEntry {
     title: string,
     when: string,
@@ -12,7 +16,7 @@ interface WorkExperienceEntry {
 const workExperienceEntries = workExperienceData as WorkExperienceEntry[]
 
 
-export default function WorkExperience() {
+export default function WorkExperience({onProgress}: WorkExperienceProps) {
     const sectionRef = useRef(null);
     const triggerRef = useRef(null);
 
@@ -30,7 +34,8 @@ export default function WorkExperience() {
                 start: "top top",
                 end: "3000 top",
                 scrub: 0.6,
-                pin: true
+                pin: true,
+                onUpdate: (self) => onProgress(self.progress)
             }
         })
 

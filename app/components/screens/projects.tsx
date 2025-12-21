@@ -4,6 +4,10 @@ import ProjectCard from '../ui/projectCard/projectCard';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 
+interface ProjectsProps {
+    onProgress: (progress: number) => void
+}
+
 interface ProjectEntry {
     name: string,
     description: string,
@@ -14,7 +18,7 @@ interface ProjectEntry {
 
 const ProjectEntries = ProjectData as ProjectEntry[];
 
-export default function Projects() {
+export default function Projects({onProgress}: ProjectsProps) {
     const triggerRef = useRef(null);
 
     gsap.registerPlugin(ScrollTrigger);
@@ -27,6 +31,7 @@ export default function Projects() {
                 scrub: 0.6,
                 start: "center center",
                 end: "+=4000",
+                onUpdate: (self) => onProgress(self.progress)
             }
         });
 

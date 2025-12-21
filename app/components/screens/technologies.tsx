@@ -8,11 +8,17 @@ import { Circle } from "two.js/src/shapes/circle";
 import MatterAttractors from "matter-attractors";
 import { Rectangle } from "two.js/src/shapes/rectangle";
 import { Shape } from "two.js/src/shape";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 // eslint-disable-next-line react-hooks/rules-of-hooks
 Matter.use(MatterAttractors);
 
 const technologyEntries = TechnologiesData as string[];
+
+interface TechnologiesProps {
+    onProgress: (progress: number) => void
+}
 
 interface Body extends Matter.Body {
     object: Group
@@ -40,7 +46,7 @@ interface Boundaries {
     bottom: MyRectangle
 }
 
-export default function Technologies() {
+export default function Technologies({onProgress}: TechnologiesProps) {
     const canvas = useRef<HTMLDivElement | null>(null);
     const two = useRef<Two | null>(null);
     const entities = useRef<Body[]>([]);
@@ -56,6 +62,8 @@ export default function Technologies() {
         },
         boundaries: null as Boundaries | null
     });
+
+    gsap.registerPlugin(ScrollTrigger);
 
     function createBoundary(width: number, height: number) {
         if (!two.current) return null;
@@ -148,8 +156,6 @@ export default function Technologies() {
             Matter.Body.scale(entity, newRadius, newRadius);
             entity.circleRadius = newRadius;
             circle.radius = newRadius;
-            console.log(entity.position)
-            console.log(child.position)
         }
     }
 
@@ -284,6 +290,17 @@ export default function Technologies() {
         createTechnologyElements();
         resize();
         mouse.current = addMouseInteraction();
+
+        const trigger = ScrollTrigger.create({
+            trigger: canvas.current,
+            start: 'top top',
+            end: 'bottom top',
+            onUpdate: (self) => onProgress(self.progress)
+        });
+
+        return () => {
+            trigger.kill();
+        }
     }, []);
 
     return (

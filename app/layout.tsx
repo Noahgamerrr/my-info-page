@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import StyledComponentsRegistry from "./lib/styledComponentsRegistry";
 
 export const metadata: Metadata = {
   title: "Noah Arsić's portfolio",
@@ -14,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        {children}
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
   );
