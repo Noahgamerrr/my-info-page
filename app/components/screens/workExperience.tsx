@@ -10,7 +10,8 @@ interface WorkExperienceProps {
 interface WorkExperienceEntry {
     title: string,
     when: string,
-    technologies: string
+    technologies: string,
+    description: string
 }
 
 const workExperienceEntries = workExperienceData as WorkExperienceEntry[]
@@ -63,6 +64,7 @@ export default function WorkExperience({onProgress}: WorkExperienceProps) {
                                         <p className="text-3xl underline">{w.title}</p>
                                         <p className="text-xl">{w.when}</p>
                                         <p className="text-xl">{w.technologies}</p>
+                                        <p className="text-xl whitespace-pre-line mt-5">{w.description}</p>
                                     </div>
                                 </div>
                             ))

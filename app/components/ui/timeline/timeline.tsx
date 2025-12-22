@@ -40,7 +40,7 @@ const TimelineElement = ({title, isLast, progress, isActive}: TimelineElementPro
             <TimeLineDiv 
                 className={`after:absolute after:h-5 after:w-5 ${isActive ? "after:bg-black" : "after:bg-unfocused"} after:rounded-full after:translate-x-1/2 before:w-1 before:h-1/3 before:absolute before:left-21 before:-translate-x-1/2 before:translate-y-2 ${isLast && "before:hidden"}`}
             />
-            <div className={`ms-10 font-bold ${isActive ? "text-black" : "text-unfocused"}`}>{title}</div>
+            <div className={`ms-10 font-bold ${isActive ? "text-black" : "text-unfocused"} transition-[color] duration-250`}>{title}</div>
         </div>
         
     )
