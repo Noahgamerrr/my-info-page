@@ -24,7 +24,7 @@ export default function ProjectCard(
 
     return (
         <Card
-            className={`bg-gray-900 text-white w-1/4 h-4/7 mx-auto rounded-2xl ${className}`}
+            className={`bg-gray-900 text-white xl:w-85 xl:h-130 lg:h-95 lg:w-60 mx-auto rounded-2xl ${className}`}
             style={{ 
                 marginLeft: `calc(var(--spacing) * ${position})`,
                 zIndex: 9999 - position

@@ -7,17 +7,17 @@ import LinkedIn from "@/public/svg/LinkedIn.svg";
 
 export default function AboutMe() {
     return (
-        <div className='h-screen'>
-            <div className='sticky top-1/8'>
+        <div className='xl:h-screen'>
+            <div className='xl:sticky xl:top-1/8'>
                 <p className="font-bold text-6xl">About Me</p>
-                <div className='grid grid-cols-2 gap-10 h-[87.5%] pt-10'>
-                    <span className="flex">
+                <div className='grid grid-cols-2 sm:max-xl:grid-cols-6 gap-10 xl:h-[87.5%] xl:pt-10 sm:max-xl:pt-8'>
+                    <span className="flex sm:max-xl:contents">
                         <Image
                             src={Portrait}
                             alt="Picture of me"
-                            className="h-auto w-3/10 mr-5"
+                            className="h-auto xl:w-3/10 lg:w-1/2 sm:max-xl:mx-auto mr-5 sm:max-xl:col-span-3"
                         />
-                        <span className="flex flex-col gap-5">
+                        <span className="flex flex-col gap-5 sm:max-xl:col-span-3">
                             <div>
                                 <Image
                                     src={Map}
@@ -52,18 +52,18 @@ export default function AboutMe() {
                             </div>
                         </span>
                     </span>
-                    <span>
-                        <p className="font-bold text-4xl mb-5">Competitions & Certificates</p>
-                        <ul>
+                    <div className="sm:max-xl:mt-10 sm:max-xl:contents">
+                        <p className="font-bold text-4xl mb-5 sm:max-xl:col-span-2">Competitions & Certificates</p>
+                        <ul className="sm:max-xl:col-span-4">
                             <li className="text-xl mb-2">Cambridge Certificate in Advanced English C2</li>
                             <li className="text-xl mb-2">2nd place @ Knapp Coding Contest 2025</li>
                             <li className="text-xl mb-2">3nd price @ Junior Mathematical Olympiad in Carinthia & Styria 2019</li>
                             <li className="text-xl mb-2">2nd price @ Junior Mathematical Olympiad in Carinthia & Styria 2020</li>
                         </ul>
-                    </span>
-                    <span>
-                        <p className="font-bold text-4xl mb-5">Hobbies</p>
-                        <ul>
+                    </div>
+                    <div className="sm:max-xl:mt-10 sm:max-xl:contents">
+                        <p className="font-bold text-4xl mb-5 sm:max-xl:col-span-2">Hobbies</p>
+                        <ul className="sm:max-xl:col-span-4">
                             <li className="text-xl mb-2">Programming</li>
                             <li className="text-xl mb-2">Reading</li>
                             <li className="text-xl mb-2">Languages & Linguistics</li>
@@ -72,55 +72,16 @@ export default function AboutMe() {
                             <li className="text-xl mb-2">Maths</li>
                             <li className="text-xl mb-2">Biking</li>
                         </ul>
-                    </span>
-                    <span>
-                        <p className="font-bold text-4xl mb-5">Languages</p>
-                        <ul>
+                    </div>
+                    <div className="sm:max-xl:mt-10 sm:max-xl:contents">
+                        <p className="font-bold text-4xl mb-5 sm:max-xl:col-span-2">Languages</p>
+                        <ul className="sm:max-xl:col-span-4">
                             <li className="text-xl mb-2">German (native)</li>
                             <li className="text-xl mb-2">English (C2)</li>
                             <li className="text-xl mb-2">Croatian</li>
                             <li className="text-xl mb-2">French</li>
                         </ul>
-                    </span>
-                    {
-                        /*
-                            <span className="flex items-center">
-                                <Image
-                                    src={Map}
-                                    alt="Location"
-                                    className="mr-5 size-6"
-                                />
-                                <span>Austria</span>
-                            </span>
-                            <span className="flex items-center">
-                                <Image
-                                    src={School}
-                                    alt="School"
-                                    className="mr-5 size-6"
-                                />
-                                <span>HTL Villach</span>
-                            </span>
-                            <span className="flex items-center">
-                                <Image
-                                    src={GitHub}
-                                    alt="GitHub"
-                                    className="mr-5 size-6"
-                                />
-                                <span>Noahgamerrr</span>
-                            </span>
-                            <span className="flex items-center">
-                                <Image
-                                    src={LinkedIn}
-                                    alt="LinkedIn"
-                                    className="mr-5 size-6"
-                                />
-                                <span>arsicn</span>
-                            </span>
-                            <span>
-                                <p>Hobbies</p>
-                            </span>
-                        */
-                    }
+                    </div>
                 </div>
             </div>
         </div>
