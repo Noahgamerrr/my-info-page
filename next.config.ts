@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   compiler: {
     styledComponents: true
   },
-  output: "export",
+  output: process.env.IS_PROD ? "export" : "standalone",
   basePath: "/my-info-page"
 };
 
