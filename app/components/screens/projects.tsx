@@ -48,7 +48,7 @@ export default function Projects({onProgress}: ProjectsProps) {
 
     return (
         <div>
-            <p className="font-bold text-6xl sticky top-1/8">Projects</p>
+            <p className="font-bold text-3xl lg:text-6xl sticky top-1/8">Projects</p>
             <div className='h-screen w-full relative' ref={triggerRef}>
                 {
                     ProjectEntries.map((pe, idx) => (

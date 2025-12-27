@@ -24,7 +24,7 @@ export default function ProjectCard(
 
     return (
         <Card
-            className={`bg-gray-900 text-white xl:w-85 xl:h-130 lg:h-95 lg:w-60 mx-auto rounded-2xl ${className}`}
+            className={`bg-gray-900 text-white xl:w-85 xl:h-130 h-95 w-60 mx-auto rounded-2xl ${className}`}
             style={{ 
                 marginLeft: `calc(var(--spacing) * ${position})`,
                 zIndex: 9999 - position
@@ -41,12 +41,12 @@ export default function ProjectCard(
                             fill={true}
                         />
                     </div>
-                    <h5 className='text-2xl font-bold pt-4'>{name}</h5>
+                    <h5 className='text-lg lg:text-2xl font-bold pt-4'>{name}</h5>
                 </div>
-                <p>{description}</p>
+                <p className='text-sm lg:text-base'>{description}</p>
                 <div className='flex flex-row gap-2'>
                     {technologies.map((t, idx) => (
-                        <Badge key={idx} className='rounded-full'>{t}</Badge>
+                        <Badge key={idx} className='text-sm lg:text-base rounded-full'>{t}</Badge>
                     ))}
                 </div>
             </div>
