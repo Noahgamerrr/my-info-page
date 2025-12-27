@@ -7,8 +7,8 @@ import LinkedIn from "@/public/svg/LinkedIn.svg";
 
 export default function AboutMe() {
     return (
-        <div className='xl:h-screen'>
-            <div className='xl:sticky xl:top-1/8'>
+        <div className='min-h-screen xl:h-screen'>
+            <div className='sticky top-1/8'>
                 <p className="font-bold text-6xl">About Me</p>
                 <div className='grid grid-cols-2 sm:max-xl:grid-cols-6 gap-10 xl:h-[87.5%] xl:pt-10 sm:max-xl:pt-8'>
                     <span className="flex sm:max-xl:contents">

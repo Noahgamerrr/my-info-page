@@ -57,7 +57,7 @@ export default function WorkExperience({onProgress}: WorkExperienceProps) {
                         {
                             workExperienceEntries.map((w, idx) => (
                                 <div
-                                    className="mb-5 h-screen w-[calc(100vw-400px)] flex flex-col justify-center items-center"
+                                    className="mb-5 h-screen w-screen lg:w-[calc(100vw-400px)] flex flex-col justify-center items-center"
                                     key={idx}
                                 >
                                     <div>

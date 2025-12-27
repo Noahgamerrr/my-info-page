@@ -56,7 +56,7 @@ export default function Home() {
                 titles={titles}
                 progress={progress}
             />
-            <div className='lg:w-[calc(100vw-300px)] ml-auto p-4'>
+            <div className='lg:w-[calc(100vw-300px)] ml-auto p-6 lg:p-4'>
                 <Landing 
                 gentiumFont={gentiumFont.className}
                 />
