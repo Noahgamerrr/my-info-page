@@ -25,7 +25,7 @@ export default function WorkExperience({onProgress}: WorkExperienceProps) {
 
     useEffect(() => {
         const pin = gsap.fromTo(sectionRef.current, {
-            translateX: 0
+            translateX: 0,
         }, {
             translateX: "-325vw",
             ease: "none",
@@ -33,7 +33,7 @@ export default function WorkExperience({onProgress}: WorkExperienceProps) {
             scrollTrigger: {
                 trigger: triggerRef.current,
                 start: "top top",
-                end: "3000 top",
+                end: "=+3000",
                 scrub: 0.6,
                 pin: true,
                 onUpdate: (self) => onProgress(self.progress)
@@ -47,7 +47,7 @@ export default function WorkExperience({onProgress}: WorkExperienceProps) {
 
     return (
         <div className='flex flex-col justify-center'>
-            <p className="font-bold text-6xl sticky top-1/8">Work experience</p>
+            <p className="font-bold text-3xl lg:text-6xl sticky top-1/8">Work experience</p>
             <section className="overflow-hidden">
                 <div ref={triggerRef}>
                     <div
@@ -57,14 +57,14 @@ export default function WorkExperience({onProgress}: WorkExperienceProps) {
                         {
                             workExperienceEntries.map((w, idx) => (
                                 <div
-                                    className="mb-5 h-screen w-screen lg:w-[calc(100vw-400px)] flex flex-col justify-center items-center"
+                                    className="mb-5 h-screen w-[50vw] max-lg:mx-auto lg:w-[calc(100vw-400px)] flex flex-col justify-center items-center"
                                     key={idx}
                                 >
                                     <div>
-                                        <p className="text-3xl underline">{w.title}</p>
-                                        <p className="text-xl">{w.when}</p>
-                                        <p className="text-xl">{w.technologies}</p>
-                                        <p className="text-xl whitespace-pre-line mt-5">{w.description}</p>
+                                        <p className="text-xl lg:text-3xl underline">{w.title}</p>
+                                        <p className="text-sm lg:text-xl">{w.when}</p>
+                                        <p className="text-sm lg:text-xl">{w.technologies}</p>
+                                        <p className="text-sm lg:text-xl whitespace-pre-line mt-5">{w.description}</p>
                                     </div>
                                 </div>
                             ))

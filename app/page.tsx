@@ -50,7 +50,7 @@ export default function Home() {
 
     return (
         <main 
-            className={`min-h-screen w-full sm:items-start ${interFont.className}`}
+            className={`min-h-screen w-full items-start ${interFont.className}`}
         >
             <Timeline 
                 titles={titles}
