@@ -33,7 +33,7 @@ export default function WorkExperience({onProgress}: WorkExperienceProps) {
             scrollTrigger: {
                 trigger: triggerRef.current,
                 start: "top top",
-                end: "=+3000",
+                end: `+=${window.innerWidth * 3}`,
                 scrub: 0.6,
                 pin: true,
                 onUpdate: (self) => onProgress(self.progress)
