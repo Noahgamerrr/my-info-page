@@ -54,7 +54,7 @@ export default function Projects({onProgress}: ProjectsProps) {
                     ProjectEntries.map((pe, idx) => (
                         <ProjectCard
                             key={idx}
-                            imageSrc={`${process.env.IS_PROD ? "/my-info-page" : ""}/images/projects/${pe.src}`}
+                            imageSrc={`/my-info-page/images/projects/${pe.src}`}
                             name={pe.name}
                             description={pe.description}
                             technologies={pe.technologies}
