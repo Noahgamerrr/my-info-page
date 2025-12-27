@@ -214,6 +214,31 @@ export default function Technologies({onProgress}: TechnologiesProps) {
         // @ts-expect-error mouseConstraint.mouse.mousewheel is not defined
         mouseConstraint.mouse.element.removeEventListener("wheel", mouseConstraint.mouse.mousewheel);
 
+        //Implement scroll for mobile
+        let touchStart: TouchEvent | null = null;
+        mouseConstraint.mouse.element.addEventListener('touchstart', (event) => {
+            if (!mouseConstraint.body) {
+                touchStart = event;
+            }
+        });
+
+        mouseConstraint.mouse.element.addEventListener('touchend', (event) => {
+            event.preventDefault();
+            touchStart = null;
+        });
+
+
+        mouseConstraint.mouse.element.addEventListener('touchmove', (event) => {
+            if (!mouseConstraint.body && touchStart) {
+                event.preventDefault();
+                const start = touchStart.touches[0].clientY
+                const end = event.touches[0].clientY
+                const delta = start - end
+                window.scrollTo(0, window.scrollY + delta);
+                touchStart = event
+            }
+        });
+
         Matter.World.add(solver.current.world, mouseConstraint);
 
         return mouseConstraint;
@@ -311,7 +336,7 @@ export default function Technologies({onProgress}: TechnologiesProps) {
 
     return (
         <div className="h-screen w-full" ref={canvas}>
-            <p className="font-bold text-6xl sticky top-1/8">Technologies</p>
+            <p className="font-bold text-3xl lg:text-6xl sticky top-1/8">Technologies</p>
         </div>
     )
 }

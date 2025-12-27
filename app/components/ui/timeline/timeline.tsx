@@ -47,7 +47,7 @@ const TimelineElement = ({title, isLast, progress, isActive}: TimelineElementPro
             <TimeLineDiv 
                 className={`after:absolute after:h-5 after:w-5 ${isActive ? "after:bg-black" : "after:bg-unfocused"} after:rounded-full after:-translate-x-1/2 lg:after:translate-x-1/2 after:-translate-y-1/2 lg:after:translate-y-0 before:w-full before:h-1 lg:before:w-1 lg:before:h-1/3 before:absolute lg:before:left-21 lg:before:-translate-x-1/2 before:-translate-y-1/2 lg:before:translate-y-2 ${isLast && "before:hidden"}`}
             />
-            <div className={`lg:ms-10 max-lg:mt-5 font-bold ${isActive ? "text-black" : "text-unfocused"} transition-[color] duration-250 max-lg:-translate-x-1/2 max-lg:w-fit text-center max-sm:text-sm`}>{title}</div>
+            <div className={`lg:ms-10 max-lg:mt-5 font-bold ${isActive ? "text-black" : "text-unfocused"} transition-[color] duration-250 max-lg:-translate-x-1/2 max-lg:w-fit text-center max-sm:text-xs`}>{title}</div>
         </div>
         
     )
