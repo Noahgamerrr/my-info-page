@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   compiler: {
     styledComponents: true
   },
-  output: process.env.IS_PROD ? "export" : "standalone",
+  output: process.env.GITHUB_PAGES ? "export" : "standalone",
   basePath: "/my-info-page"
 };
 
