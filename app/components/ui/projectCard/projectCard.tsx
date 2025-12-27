@@ -46,7 +46,7 @@ export default function ProjectCard(
                 <p className='text-sm lg:text-base'>{description}</p>
                 <div className='flex flex-row gap-2'>
                     {technologies.map((t, idx) => (
-                        <Badge key={idx} className='text-sm lg:text-base rounded-full' style={{backgroundColor: "#A5F3FC"}}>{t}</Badge>
+                        <div key={idx} className='flex h-fit items-center gap-1 font-semibold text-sm lg:text-base rounded-full bg-cyan-100 text-cyan-800 px-2 py-0.5'>{t}</div>
                     ))}
                 </div>
             </div>
