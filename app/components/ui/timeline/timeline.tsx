@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import styled from "styled-components"
 
 interface TimelineProps {
@@ -29,7 +30,11 @@ export const Timeline = ({titles, progress}: TimelineProps) => {
 }
 
 const TimelineElement = ({title, isLast, progress, isActive}: TimelineElementProps) => {
-    const isSmMd = window.innerWidth < 1024;
+    const [isSmMd, setIsSmMd] = useState(false);
+
+    useEffect(() => {
+        setIsSmMd(window.innerWidth < 1024);
+    }, []);
 
     const TimeLineDiv = styled.div`
         &:before{

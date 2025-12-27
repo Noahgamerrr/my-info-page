@@ -5,6 +5,7 @@ import Matter, { Engine } from "matter-js";
 import { Group } from "two.js/src/group";
 import { Text } from "two.js/src/text";
 import { Circle } from "two.js/src/shapes/circle";
+// @ts-expect-error declaration file does not exist
 import MatterAttractors from "matter-attractors";
 import { Rectangle } from "two.js/src/shapes/rectangle";
 import { Shape } from "two.js/src/shape";
@@ -210,6 +211,7 @@ export default function Technologies({onProgress}: TechnologiesProps) {
             }
         });
 
+        // @ts-expect-error mouseConstraint.mouse.mousewheel is not defined
         mouseConstraint.mouse.element.removeEventListener("wheel", mouseConstraint.mouse.mousewheel);
 
         Matter.World.add(solver.current.world, mouseConstraint);
@@ -243,6 +245,7 @@ export default function Technologies({onProgress}: TechnologiesProps) {
         for (const tech of technologyEntries) {
             const word = tech;
             const group = new Two.Group() as MyGroup;
+            // @ts-expect-error defaultStyles property "alignment" is deemed invalid, though it works
             const text = new Two.Text(word, 0, 0, defaultStyles);
 
 
@@ -274,13 +277,16 @@ export default function Technologies({onProgress}: TechnologiesProps) {
         if (!mouse.current) return;
         if (!solver.current) return;
         const allBodies = Matter.Composite.allBodies(solver.current.world);
+        // @ts-expect-error update is not defined in types
         Matter.MouseConstraint.update(mouse.current, allBodies);
+        // @ts-expect-error _triggerEvents is not defined in types
         Matter.MouseConstraint._triggerEvents(mouse.current);
 
         Matter.Engine.update(solver.current);
 
         for (let i = 0; i < entities.current.length; i++) {
             const entity = entities.current[i];
+            // @ts-expect-error using a different Vector interface than expected
             entity.object.position.copy(entity.position);
         }
     }
