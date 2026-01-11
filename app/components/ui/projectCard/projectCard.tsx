@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Badge, Card } from 'flowbite-react'
+import { Card } from 'flowbite-react'
 import Image from 'next/image'
 
 interface ProjectCardProps {
@@ -24,7 +24,7 @@ export default function ProjectCard(
 
     return (
         <Card
-            className={`bg-gray-900 text-white xl:w-85 xl:h-130 h-95 w-60 mx-auto rounded-2xl ${className}`}
+            className={`bg-gray-900 text-white xl:w-85 xl:h-130 h-95 w-60 mx-auto rounded-2xl ${className} border border-gray-200`}
             style={{ 
                 marginLeft: `calc(var(--spacing) * ${position})`,
                 zIndex: 9999 - position

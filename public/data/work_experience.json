@@ -1,21 +1,9 @@
 [
     {
-        "title": "Data Analysis Assistent @ Infineon",
-        "when": "Summer 2022",
-        "technologies": "Oracle SQL, Tableau",
-        "description": "- Read data from a database \r\n - Visualised the results in Tableau"
-    },
-    {
-        "title": "Data Analysis Assistent @ Infineon",
-        "when": "Summer 2023",
-        "technologies": "Python, Oracle SQL, Tableau",
-        "description": "- Fetched data from an Elasticsearch database using a Python-script\r\n- Visualised the results in Tableau"
-    },
-    {
-        "title": "Fullstack Webdeveloper @ FlyByGuys",
-        "when": "September 2023 - March 2024",
-        "technologies": "Astro, Svelte, Typescript",
-        "description": "Helped in the creation of a hub for internet providers to upload 3D-models of their power pylons. I was responsible for:\n- The authentication/authorisation process\n- Uploads of images to an R2 database\n- Pannellum integration\n- Migration to Supabase"
+        "title": "Basic Military Service",
+        "when": "July 2025 - January 2026",
+        "technologies": "",
+        "description": "Mandatory military service from 07.07.2025-06.01.2026"
     },
     {
         "title": "Fullstack Webdeveloper @ Kelag",
@@ -24,9 +12,21 @@
         "description": "Created a web app where clients can express their interest/problems concerning their carbon-fibre connection."
     },
     {
-        "title": "Basic Military Service",
-        "when": "July 2025 - January 2026",
-        "technologies": "",
-        "description": ""
+        "title": "Fullstack Webdeveloper @ FlyByGuys",
+        "when": "September 2023 - March 2024",
+        "technologies": "Astro, Svelte, Typescript",
+        "description": "Helped in the creation of a hub for internet providers to upload 3D-models of their power pylons. I was responsible for:\n- The authentication/authorisation process\n- Uploads of images to an R2 database\n- Pannellum integration\n- Migration to Supabase"
+    },
+    {
+        "title": "Data Analysis Assistent @ Infineon",
+        "when": "Summer 2023",
+        "technologies": "Python, Oracle SQL, Tableau",
+        "description": "- Fetched data from an Elasticsearch database using a Python-script\r\n- Visualised the results in Tableau"
+    },
+    {
+        "title": "Data Analysis Assistent @ Infineon",
+        "when": "Summer 2022",
+        "technologies": "Oracle SQL, Tableau",
+        "description": "- Read data from a database \r\n - Visualised the results in Tableau"
     }
 ]
