@@ -34,22 +34,28 @@ export default function AboutMe() {
                                 />
                                 <span>HTL Villach</span>
                             </div>
-                            <div>
+                            <a 
+                                href="https://github.com/Noahgamerrr"
+                                className="hover:bg-background-hover rounded-md duration-200"
+                            >
                                 <Image
                                     src={GitHub}
                                     alt="GitHub"
                                     className="inline mr-5 size-6"
                                 />
                                 <span>Noahgamerrr</span>
-                            </div>
-                            <div>
+                            </a>
+                            <a 
+                                href="https://www.linkedin.com/in/arsicn/"
+                                className="hover:bg-background-hover rounded-md duration-200"
+                            >
                                 <Image
                                     src={LinkedIn}
                                     alt="LinkedIn"
                                     className="inline mr-5 size-6"
                                 />
                                 <span>arsicn</span>
-                            </div>
+                            </a>
                         </span>
                     </span>
                     <div className="md:max-xl:mt-10 max-xl:contents">

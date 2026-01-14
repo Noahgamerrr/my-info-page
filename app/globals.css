@@ -4,12 +4,14 @@
 
 :root {
   --background: #ecf2b8;
+  --background-hover: #c0c499;
   --foreground: #171717;
   --unfocused: #aaa;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-hover: var(--background-hover);
   --color-foreground: var(--foreground);
   --color-unfocused: var(--unfocused);
 }
